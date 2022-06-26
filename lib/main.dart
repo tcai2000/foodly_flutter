@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Foodly Aplication',
       theme: ThemeData(
-        fontFamily: 'Cera Roun',
+        // fontFamily: 'Cera Roun',
         brightness: Brightness.light,        
         primaryColor: primaryColor,
       ),

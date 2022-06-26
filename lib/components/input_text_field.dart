@@ -4,8 +4,10 @@ import '../utils/color_constants.dart';
 
 class InputTextField extends StatefulWidget {
   TextEditingController textEditingController;
+  Function? validateInput;
   TextInputType textInputType;
-  InputTextField({ 
+  InputTextField({
+    this.validateInput, 
     required this.textEditingController,
     required this.textInputType
    });
@@ -22,7 +24,9 @@ class _InputTextFieldState extends State<InputTextField> {
       cursorColor: primaryColor,
       maxLines: 1,
       minLines: 1,
-      validator: (value) => null,
+      validator: (value) {
+        return widget.validateInput!(value);
+      },
       style: const TextStyle(
         fontSize: 16,
         fontFamily: 'Roboto',

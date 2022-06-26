@@ -4,8 +4,10 @@ import 'package:foodly_app/utils/color_constants.dart';
 class InputPassField extends StatefulWidget {
   TextEditingController textEditingController;
   TextInputType textInputType;
+  Function? validateInput;
   InputPassField({
     Key? key, 
+    this.validateInput,
     required this.textEditingController,
     required this.textInputType
   }) : super(key: key);
@@ -24,7 +26,9 @@ class _InputPassFieldState extends State<InputPassField> {
       cursorColor: primaryColor,
       maxLines: 1,
       minLines: 1,
-      validator: (value) => null,
+      validator: (value) {
+        return widget.validateInput!(value);
+      },
       style: const TextStyle(
         fontSize: 16,
         fontFamily: 'Roboto',
