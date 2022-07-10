@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:foodly_app/utils/utils.dart';
 
-import '../utils/color_constants.dart';
 
 class InputTextField extends StatefulWidget {
   TextEditingController textEditingController;
   Function? validateInput;
   TextInputType textInputType;
-  InputTextField({
+  InputTextField({Key? key, 
     this.validateInput, 
     required this.textEditingController,
     required this.textInputType
-   });
+   }) : super(key: key);
 
   @override
   State<InputTextField> createState() => _InputTextFieldState();

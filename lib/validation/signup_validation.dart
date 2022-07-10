@@ -1,4 +1,4 @@
-import 'package:foodly_app/validation/constants.dart';
+import 'package:foodly_app/utils/utils.dart';
 
 mixin SignUpValidation {
   static isFirstName(firstName) {

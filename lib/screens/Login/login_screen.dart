@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:foodly_app/components/default_button.dart';
-import 'package:foodly_app/components/input_pass_field.dart';
-import 'package:foodly_app/components/input_text_field.dart';
-import 'package:foodly_app/components/logo.dart';
-import 'package:foodly_app/screens/signup_screen.dart';
+import 'package:foodly_app/screens/Signup/signup_screen.dart';
+import 'package:foodly_app/screens/components/components.dart';
 import 'package:foodly_app/utils/color_constants.dart';
-import 'package:foodly_app/validation/constants.dart';
 import 'package:foodly_app/validation/login_validation.dart';
 
 class LoginScreen extends StatefulWidget {

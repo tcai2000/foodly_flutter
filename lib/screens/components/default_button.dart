@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:foodly_app/utils/utils.dart';
 
-import '../utils/color_constants.dart';
 
 class DefaultButton extends StatefulWidget {
   String text;

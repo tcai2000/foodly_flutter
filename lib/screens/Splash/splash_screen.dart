@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:foodly_app/screens/login_screen.dart';
+import 'package:foodly_app/screens/Login/login_screen.dart';
+import 'package:foodly_app/screens/components/components.dart';
 import 'package:foodly_app/utils/color_constants.dart';
 import 'dart:async';
-import '../components/logo.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({ Key? key }) : super(key: key);
 

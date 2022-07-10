@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:foodly_app/screens/Home/home_screen.dart';
 import 'package:foodly_app/utils/color_constants.dart';
-import 'screens/splash_screen.dart';
+import 'screens/Splash/splash_screen.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -13,11 +14,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Foodly Aplication',
       theme: ThemeData(
-        // fontFamily: 'Cera Roun',
+        fontFamily: 'Noto Sans',
         brightness: Brightness.light,        
         primaryColor: primaryColor,
       ),
-      home: SplashScreen()
+      home: HomeScreen()
     );
   }
 }

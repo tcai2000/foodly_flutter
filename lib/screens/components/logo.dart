@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../utils/color_constants.dart';
+import 'package:foodly_app/utils/utils.dart';
 
 class Logo extends StatelessWidget {
   double fontSize;
